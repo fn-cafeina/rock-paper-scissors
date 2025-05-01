@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #202020;
+  border-radius: 4px;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  width: min(90%, 400px);
+  height: min(90%, 500px);
+  padding: 20px;
+}
+
+.scores {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.context {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 15px;
+  background-color: #121212;
+  color: #ffffff;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 4px;
+}
+
+.buttons button:hover:enabled {
+  background-color: #161616;
+}
+
+.buttons button:disabled,
+.buttons button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
