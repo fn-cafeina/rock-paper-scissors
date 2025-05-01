@@ -52,9 +52,9 @@ function restart() {
 
 function finishGame() {
   if(humanScore > computerScore) {
-    context.textContent = "The winner is the human.";
+    context.textContent = "human is the winner.";
   } else {
-    context.textContent = "The winner is the computer.";
+    context.textContent = "computer is the winner.";
   }
 }
 
